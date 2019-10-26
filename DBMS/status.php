@@ -8,7 +8,7 @@ if ($usr == NULL or $pass == NULL)
 }
 else
 {
-    $con = mysqli_connect("localhost","Pranav","Passwd@123","dbms") or die('Unable to connect to database');
+    $con = mysqli_connect("localhost","Username","Password","dbname") or die('Unable to connect to database');
     $stat = mysqli_query($con,"INSERT INTO users VALUES('$usr','$pass');");
     if($stat == 1)
     {
