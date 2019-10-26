@@ -5,7 +5,7 @@
 <?php
 $uname = $_POST['username'];
 $pass = $_POST['password'];
-$con = mysqli_connect("localhost","Pranav","Passwd@123","dbms") or die("Unable to connect");
+$con = mysqli_connect("localhost","Username","Password","dbname") or die("Unable to connect");
 $query = mysqli_query($con,"SELECT count(*) FROM users where username='$uname' and password='$pass';");
 $result = mysqli_fetch_array($query);
 $query1 = mysqli_query($con,"Select * FROM web_series;");
